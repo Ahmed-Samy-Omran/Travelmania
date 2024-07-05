@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="country_codes">
+        <item>+1</item>  <!-- United States -->
+        <item>+44</item> <!-- United Kingdom -->
+        <item>+91</item> <!-- India -->
+        <item>+86</item> <!-- China -->
+        <item>+81</item> <!-- Japan -->
+        <item>+49</item> <!-- Germany -->
+        <item>+33</item> <!-- France -->
+        <item>+39</item> <!-- Italy -->
+        <item>+7</item>  <!-- Russia -->
+        <item>+55</item> <!-- Brazil -->
+        <item>+81</item> <!-- Japan -->
+        <item>+82</item> <!-- South Korea -->
+        <item>+34</item> <!-- Spain -->
+        <item>+52</item> <!-- Mexico -->
+        <item>+61</item> <!-- Australia -->
+        <item>+1</item>  <!-- Canada -->
+        <item>+46</item> <!-- Sweden -->
+        <item>+31</item> <!-- Netherlands -->
+        <item>+91</item> <!-- India -->
+        <item>+234</item><!-- Nigeria -->
+        <item>+27</item> <!-- South Africa -->
+        <item>+62</item> <!-- Indonesia -->
+        <item>+65</item> <!-- Singapore -->
+        <item>+84</item> <!-- Vietnam -->
+        <item>+20</item> <!-- Egypt -->
+        <item>+972</item><!-- Israel -->
+        <item>+90</item> <!-- Turkey -->
+        <item>+966</item><!-- Saudi Arabia -->
+        <item>+971</item><!-- United Arab Emirates -->
+
+    </string-array>
+</resources>

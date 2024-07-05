@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".bottomnavmain.home.attractions.AtractionSearchActivity">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        android:text="Find attractions"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="27dp"
+        android:background="@drawable/edittext_color"
+        android:hint="Where are you going?"
+        android:padding="18dp"
+        android:textColor="@color/white"
+        android:textColorHint="#D7FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/around_loc_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/arround_loc_ic"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_search"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Around your current location"
+        android:textColor="@color/white"
+        android:layout_marginStart="7dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/around_loc_ic"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_search"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <TextView
+        android:id="@+id/continue_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Continue your search"
+        android:textColor="@color/white"
+        android:layout_marginStart="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/around_loc_ic"
+        app:layout_constraintTop_toBottomOf="@+id/around_loc_ic"
+        tools:layout_editor_absoluteX="116dp" />
+    <ImageView
+        android:id="@+id/hurgada_ic"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/hurgada_home_ic"
+        app:layout_constraintStart_toStartOf="@+id/continue_search_tv"
+        app:layout_constraintTop_toBottomOf="@+id/continue_search_tv" />
+
+    <TextView
+        android:id="@+id/hurgada_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="6dp"
+        android:text="Hurghada Egypt"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/hurgada_ic"
+        app:layout_constraintTop_toBottomOf="@+id/continue_search_tv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="6dp"
+        android:text="1235 things to do"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/hurgada_ic"
+        app:layout_constraintTop_toBottomOf="@+id/hurgada_tv" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

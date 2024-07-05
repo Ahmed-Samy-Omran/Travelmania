@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".bottomnavmain.home.attractions.AvailabilityActivity">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="23dp"
+        >
+        <LinearLayout
+            android:id="@+id/back_press"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_chat_bot_backpress"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="27dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="17dp"
+                android:src="@drawable/arrow_back_thin"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="start"
+        android:text="Full-day Boat and Snorkeling Trip with Dolphins"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_title" />
+
+    <TextView
+        android:id="@+id/text_view_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="start"
+        android:text="Search ticket availability by date"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_view_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+    <Spinner
+        android:id="@+id/spinnerDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="creditCardExpirationDate"
+        android:background="@drawable/edittext_color"
+        android:dropDownWidth="wrap_content"
+        android:padding="15dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_search" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:gravity="start"
+        android:text="Start at 8:00 am"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDate" />
+
+    <TextView
+        android:id="@+id/availableticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Available ticket"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+    <View
+        android:id="@+id/availableticketview"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availableticket"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/standardticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="start"
+        android:text="Standard ticket"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@+id/availableticketview"
+        app:layout_constraintTop_toTopOf="@+id/availableticketview" />
+
+    <LinearLayout
+        android:id="@+id/linear_non_refundable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/availableticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/availableticketview"
+        app:layout_constraintTop_toBottomOf="@+id/standardticket">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/non_refundable_ic"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:text="Non-refundable"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hotel_name_tv" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/availableticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linear_non_refundable"
+        app:layout_constraintTop_toBottomOf="@+id/linear_non_refundable">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/discount_ic"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:text="Group discount available"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hotel_name_tv" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Language options"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/standardticket"
+        app:layout_constraintTop_toBottomOf="@+id/linear_discount" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/spinner_background"
+        android:dropDownWidth="wrap_content"
+        android:padding="15dp"
+        android:spinnerMode="dialog"
+        android:autofillHints="@string/autofill_hint_language"
+        app:layout_constraintEnd_toEndOf="@+id/availableticketview"
+        app:layout_constraintStart_toStartOf="@+id/availableticketview"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <TextView
+        android:id="@+id/tickets_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="How many tickets?"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/tickets_adult_tv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Adult (age 12-120) $17"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tickets_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tickets_tv" />
+
+    <TextView
+        android:id="@+id/tickets_child_tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Child (age 6-11) $9"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tickets_adult_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tickets_adult_tv" />
+    <TextView
+        android:id="@+id/tickets_infant_tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Infant (age 0-5) $3"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tickets_child_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tickets_child_tv" />
+
+    <LinearLayout
+        android:id="@+id/linear_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tickets_infant_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tickets_infant_tv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Total"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:gravity="start"
+            android:text="$0"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hotel_name_tv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/counetr_adult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/availableticketview"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintStart_toEndOf="@+id/tickets_adult_tv"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+        <ImageView
+            android:id="@+id/buttonMinusAdult"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/minus_ic" />
+
+        <TextView
+            android:id="@+id/adult_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/buttonPlusAdult"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/plus_ic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/counetr_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/counetr_adult"
+        app:layout_constraintTop_toBottomOf="@+id/counetr_adult">
+
+
+        <ImageView
+            android:id="@+id/buttonMinusChild"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/minus_ic" />
+
+        <TextView
+            android:id="@+id/child_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/buttonPlusChild"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/plus_ic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/counetr_infant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="@+id/counetr_child"
+        app:layout_constraintTop_toBottomOf="@+id/counetr_child">
+
+
+        <ImageView
+            android:id="@+id/buttonMinusInfant"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/minus_ic" />
+
+        <TextView
+            android:id="@+id/infant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/buttonPlusInfant"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/plus_ic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:padding="-5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#A88BF2D9"
+        app:layout_constraintBottom_toBottomOf="@+id/availableticketview"
+        app:layout_constraintEnd_toEndOf="@+id/counetr_infant"
+        app:layout_constraintStart_toStartOf="@+id/counetr_infant"
+        app:layout_constraintTop_toBottomOf="@+id/counetr_infant"
+        app:layout_constraintVertical_bias="0.461" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

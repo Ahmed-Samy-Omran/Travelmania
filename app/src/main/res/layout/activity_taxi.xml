@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".bottomnavmain.home.taxi.Taxi">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:src="@drawable/arrow_back_thin"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/taxi_view"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/view_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/pick_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toTopOf="@+id/taxi_view">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_map_icon" />
+
+        <EditText
+            android:id="@+id/text_car_rental2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:hint="Enter Pick-up location"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/horizontal_line1"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/horizontal_dot_line"
+        app:layout_constraintEnd_toEndOf="@+id/taxi_view"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toBottomOf="@+id/pick_up" />
+    <LinearLayout
+        android:id="@+id/enter_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line1">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green_map_icon" />
+
+        <EditText
+            android:id="@+id/text_car_rental1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:hint="Enter destination"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ver_dotted"
+        android:layout_width="28dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="12dp"
+        android:layerType="software"
+        android:rotation="90"
+        android:src="@drawable/vertical_dot_line_blue"
+        app:layout_constraintBottom_toTopOf="@+id/enter_des"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toBottomOf="@+id/pick_up" />
+
+    <ImageView
+        android:id="@+id/horizontal_line2"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/horizontal_dot_line"
+        app:layout_constraintEnd_toEndOf="@+id/taxi_view"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toBottomOf="@+id/enter_des" />
+
+
+    <LinearLayout
+        android:id="@+id/calender_attraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/taxi_view"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_line2">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/green_calender" />
+
+        <TextView
+            android:id="@+id/fromDate_taxi_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="4dp"
+            android:text="From date "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/search_taxi"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/blue_background_color"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/OvalShape"
+        app:shapeAppearanceOverlay="@style/OvalShape"
+        app:tint="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/on_borad_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/onboard1"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/on_board_layer" />
+      <TextView
+          android:id="@+id/first_text"
+          android:layout_width="257dp"
+          android:layout_height="wrap_content"
+          android:text="See a detailed plan of your journey"
+          android:textSize="20sp"
+          android:fontFamily="@font/dm_sans"
+          android:textStyle="bold"
+          android:gravity="center"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="520dp"
+          android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:text="Modify your plan according to your needs"
+        android:textSize="16sp"
+        android:fontFamily="@font/dm_sans"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_text"
+        android:textColor="@color/not_yellow"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

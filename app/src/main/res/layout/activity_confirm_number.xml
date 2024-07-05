@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".usermanagment.ConfirmNumber">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-2dp"
+            android:src="@drawable/arrow_back_thin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/key"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/key_img" />
+
+    <TextView
+        android:id="@+id/enter_the_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:fontFamily="@font/dm_sans"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Enter the verification code"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/enter_the_verification_code"
+        app:layout_constraintTop_toBottomOf="@+id/enter_the_verification_code">
+
+
+        <EditText
+            android:id="@+id/rectangle_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9" />
+
+        <EditText
+            android:id="@+id/rectangle_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9" />
+
+        <EditText
+            android:id="@+id/rectangle_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9" />
+
+        <EditText
+            android:id="@+id/rectangle_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9" />
+
+        <EditText
+            android:id="@+id/rectangle_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9" />
+
+        <EditText
+            android:id="@+id/rectangle_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/rectangle_verification"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9"
+
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/resending_code"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Resending code in 47 secs."
+        android:textColor="#C8D9D9CC"
+        android:translationY="-1.8sp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <TextView
+        android:id="@+id/resend_now"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="Resend Now"
+        android:layout_marginTop="6dp"
+        android:textColor="#FFFFFF"
+        android:translationY="-1.8sp"
+        app:layout_constraintStart_toEndOf="@+id/resending_code"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#8BF2D9"
+        android:gravity="center"
+        android:fontFamily="@font/dm_sans_medium"
+        android:background="@drawable/button_green_background_login"
+        android:textColor="@color/white"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resending_code" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.TravelMania"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".bottomnavmain.home.taxi.TaxiDetails"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.attractions.AvailabilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.attractions.AttractionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.attractions.AttractionHurghadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.attractions.AtractionSearchActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".bottomnavmain.home.succes.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.hotel.HotelsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.hotel.HotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.carrental.CarDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".bottomnavmain.home.carrental.SearchCarResult"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.hotel.hotelsresult.SearchHotelResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavmain.home.taxi.Taxi"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".bottomnavmain.home.carrental.CarRental"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.LoginActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".bottomnavmain.home.chatbot.ChatBot"
+            android:exported="true" />
+        <activity
+            android:name=".bottomnavmain.home.flight.FlightActivity"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.register.Register"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.PhoneNum"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.NewPass"
+            android:exported="true" />
+        <activity
+            android:name=".usermanagment.ConfirmNumber"
+            android:exported="true" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bottomnavmain.MainActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".bottomnavmain.home.hotel.HotelsActivityMain"
+            android:exported="true" />
+        <activity
+            android:name=".bottomnavmain.home.attractions.AttractionsMainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyALL5Y9gvgvAdFS9Uff4jZnojIJUAtOxbg" />
+    </application>
+
+</manifest>

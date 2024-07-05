@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".usermanagment.PhoneNum">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-2dp"
+            android:src="@drawable/arrow_back_thin" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="224dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Enter_your_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Enter your phone number"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/frame_phone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_color"
+        android:fontFamily="@font/dm_sans"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#46FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/Enter_your_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/Enter_your_phone_number" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        style="@style/NoBorderAutoCompleteTextView"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/dm_sans"
+        android:layout_marginStart="5dp"
+        android:hint="+20"
+        android:padding="1dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#8BF2D9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_phone"
+        app:layout_constraintStart_toStartOf="@+id/frame_phone"
+        app:layout_constraintTop_toTopOf="@+id/frame_phone" />
+
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_phone"
+        app:layout_constraintStart_toEndOf="@+id/autoCompleteTextView"
+        app:tint="@color/text_teal" />
+
+    <TextView
+        android:id="@+id/we_will_sen"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="We will send verification code to your number"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:translationY="-1.8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_phone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm_phone_number"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#8BF2D9"
+        android:padding="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/dm_sans_medium"
+        android:background="@drawable/button_green_background_login"
+        android:textColor="@color/white"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/we_will_sen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".usermanagment.register.Register">
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-2dp"
+            android:src="@drawable/arrow_back_thin" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/dm_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/get_the_best_out_of_derleng_by_creating_an_account"
+        android:textColor="#C8FFFFFF"
+        android:fontFamily="@font/dm_sans"
+        android:layout_marginStart="2dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/create_account"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
+
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:text="First name"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_goneMarginStart="1dp" />
+
+    <TextView
+        android:id="@+id/s_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="25dp"
+        android:text="Last name"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/f_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/et_first_name"
+       android:layout_width="140dp"
+       android:layout_height="56dp"
+       android:layout_marginTop="4dp"
+       app:errorEnabled="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="@+id/f_name"
+       app:layout_constraintTop_toBottomOf="@+id/f_name"
+       app:layout_constraintVertical_bias="0.002" >
+       <EditText
+           android:id="@+id/input_first_name"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/edittext_color"
+           android:fontFamily="@font/dm_sans"
+           android:inputType="textEmailAddress"
+           android:textAlignment="center"
+           android:textColor="#8BF2D9"/>
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_last_name"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/s_name"
+        app:layout_constraintTop_toBottomOf="@+id/s_name"
+        app:layout_constraintVertical_bias="0.004" >
+        <EditText
+            android:id="@+id/input_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_color"
+            android:fontFamily="@font/dm_sans"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:text="Phone"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/et_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_first_name" />
+
+    <EditText
+        android:id="@+id/et_country"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_color"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#46FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        style="@style/NoBorderAutoCompleteTextView"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="4dp"
+        android:hint="+20"
+        android:fontFamily="@font/dm_sans"
+        android:padding="1dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#8BF2D9"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_country"
+        app:layout_constraintEnd_toEndOf="@+id/et_country"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="@+id/et_country"
+        app:layout_constraintTop_toTopOf="@+id/et_country"
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintBottom_toBottomOf="@+id/et_country"
+        app:layout_constraintEnd_toEndOf="@+id/et_country"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/autoCompleteTextView"
+        app:tint="@color/text_teal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_phone_number"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_country"
+        app:layout_constraintStart_toEndOf="@+id/et_country"
+        app:layout_constraintTop_toBottomOf="@+id/et_last_name"
+        app:layout_constraintVertical_bias="0.0">
+        <EditText
+            android:id="@+id/input_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_color"
+            android:fontFamily="@font/dm_sans"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Age"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/et_country"
+        app:layout_constraintTop_toBottomOf="@+id/et_country" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_age"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age">
+    <EditText
+        android:id="@+id/input_age"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_color"
+        android:fontFamily="@font/dm_sans"
+        android:textAlignment="center"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#46FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="-6sp"
+        android:text="Email"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/et_age"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" >
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_color"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/dm_sans"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9"
+            android:textColorHint="#46FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/dm_sans"
+            android:background="@drawable/edittext_color"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="#8BF2D9"
+            android:textColorHint="#46FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:text="I accept term and condition"
+        android:textColor="#8BF2D9"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/dm_sans_medium"
+        android:background="@drawable/button_green_background_login"
+        android:textColor="@color/white"
+        android:text="Sign up"
+        android:backgroundTint="@color/text_teal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <LinearLayout
+        android:id="@+id/login_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_up"
+        >
+        <TextView
+            android:id="@+id/resending_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="4sp"
+            android:text="Already have an account?"
+            android:textColor="#D9D9CC"
+            android:textSize="12sp"
+            android:translationY="-1.8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+            android:text=" Log In"
+            android:fontFamily="@font/dm_sans"
+            android:textColor="#8BF2D9"
+            android:textSize="12sp"
+            android:translationY="-1.8sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

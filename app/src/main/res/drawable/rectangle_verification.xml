@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+
+    <gradient
+        android:angle="45"
+        android:startColor="#28D9D9D9"
+        android:centerColor="#28D9D9D9"
+        android:endColor="#28D9D9D9"
+        android:type="linear"/>
+    <corners
+        android:radius="15dp"/>
+
+</shape>

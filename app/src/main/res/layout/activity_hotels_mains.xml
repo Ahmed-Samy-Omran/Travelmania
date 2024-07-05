@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".bottomnavmain.home.hotel.HotelsActivityMain">
+<!--    <include layout="@layout/input_fields" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:src="@drawable/arrow_back_thin"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="78dp"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout_home"
+        android:layout_width="343dp"
+        android:layout_height="156dp"
+        app:layout_constraintTop_toBottomOf="@id/chat_bot_back_press"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/grey_20_background"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center|start">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/green_search_icon"
+                android:layout_marginStart="24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hurghada"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enter_dates"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center|start">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/green_calender" />
+
+            <TextView
+                android:id="@+id/calender_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="Select Date"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center|start"
+
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/green_travellers_search"
+                android:layout_marginStart="24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="1 room . 2 adults . 0 children "
+                android:fontFamily="@font/dm_sans_medium"
+                android:textColor="@color/white"
+                android:layout_marginStart="14dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/horizontal_dotted"
+        android:layout_width="343dp"
+        android:layout_height="2dp"
+        android:layerType="software"
+        app:layout_constraintTop_toTopOf="@id/linear_layout_home"
+        app:layout_constraintStart_toStartOf="@id/linear_layout_home"
+        app:layout_constraintEnd_toEndOf="@id/linear_layout_home"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/horizontal_dot_line"
+        />
+    <ImageView
+        android:id="@+id/horizontal_dotted_2"
+        android:layout_width="343dp"
+        android:layout_height="2dp"
+        android:layerType="software"
+        app:layout_constraintTop_toTopOf="@id/linear_layout_home"
+        app:layout_constraintStart_toStartOf="@id/linear_layout_home"
+        app:layout_constraintEnd_toEndOf="@id/linear_layout_home"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/horizontal_dot_line"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/blue_background_color"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/OvalShape"
+        app:shapeAppearanceOverlay="@style/OvalShape"
+        app:tint="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

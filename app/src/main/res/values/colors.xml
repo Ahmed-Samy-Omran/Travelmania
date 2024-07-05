@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue1">#444436</color>
+    <color name="blue2">#3C423D</color>
+    <color name="blue3">#102335</color>
+    <color name="blue4">#004D63</color>
+    <color name="blue5">#02475A</color>
+    <color name="text_teal">#8BF2D9</color>
+    <color name="text_teal_70">#B38BF2D9</color>
+    <color name="dark_white">#D2D9D9D9</color>
+    <color name="social_glassy">#66D9D9D9</color>
+    <color name="near_white">#F5D9D9D9</color>
+    <color name="twentyperc_white">#33FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="color">#CCD9D9D9</color>
+    <color name="search_car">#4DD9D9D9</color>
+    <color name="color_30">#4DD9D9D9</color>
+    <color name="color_50">#80D9D9D9</color>
+    <color name="bottom_nav_color">#33d9d9d9</color>
+    <color name="bottom_navi_color">#394857</color>
+    <color name="green_button">#8BF2D9</color>
+    <color name="blue_background_color">#998BF2D9</color>
+    <color name="btn_trips_selected">#6671BCAA</color>
+    <color name="btn_trips_selected_stroke">#71BCAA</color>
+    <color name="on_board_layer">#66000000</color>
+    <color name="not_yellow">#F3D494</color>
+    <color name="purple">#8D8BF2</color>
+
+</resources>

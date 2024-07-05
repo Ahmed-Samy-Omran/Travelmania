@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@drawable/blue_background_color">
+<ImageView
+    android:id="@+id/top_img_cancelled"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/rendering_gps_travel_icon"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="60dp"/>
+    <TextView
+        android:id="@+id/top_text_cancelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plans may change "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/top_img_cancelled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/bottom_text_cancelled"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:text="Keep a record of trips you've cancelled for later use."
+        android:textSize="16dp"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:lineHeight="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/top_text_cancelled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

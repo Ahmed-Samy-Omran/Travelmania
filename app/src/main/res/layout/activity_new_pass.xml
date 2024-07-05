@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background_color"
+    tools:context=".usermanagment.NewPass">
+
+
+    <ImageView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/chat_bot_back_press"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_chat_bot_backpress"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-2dp"
+            android:src="@drawable/arrow_back_thin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/key"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/key_img" />
+
+    <TextView
+        android:id="@+id/createNpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Create new password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/key" />
+
+    <TextView
+        android:id="@+id/keep_your_account_secure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"
+        android:gravity="top"
+        android:text="Keep your account secure by creating a strong password"
+        android:textColor="#D2D9D9D9"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/createNpass"
+        app:layout_constraintTop_toBottomOf="@+id/createNpass" />
+
+    <TextView
+        android:id="@+id/your_password_should"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"
+        android:text="Your password should be at least contain upper character"
+        android:textColor="#F5D9D9D9"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/keep_your_account_secure"
+        app:layout_constraintTop_toBottomOf="@+id/keep_your_account_secure" />
+
+    <EditText
+        android:id="@+id/frame_new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_color"
+        android:drawableEnd="@drawable/eye_icon"
+        android:fontFamily="@font/dm_sans"
+        android:hint="new password"
+        android:padding="15dp"
+        android:textAlignment="textStart"
+        android:textColor="#8BF2D9"
+        android:inputType="textWebPassword"
+        android:textColorHint="#7AFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/your_password_should"
+        app:layout_constraintTop_toBottomOf="@+id/your_password_should" />
+
+
+    <EditText
+        android:id="@+id/frame_re_enter_pass"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_color"
+        android:drawableEnd="@drawable/eye_icon"
+        android:fontFamily="@font/dm_sans"
+        android:hint="Re-enter new password"
+        android:inputType="textWebPassword"
+        android:padding="15dp"
+        android:textAlignment="textStart"
+        android:textColor="#8BF2D9"
+        android:textColorHint="#7AFFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/frame_new_pass"
+        app:layout_constraintStart_toStartOf="@+id/frame_new_pass"
+        app:layout_constraintTop_toBottomOf="@+id/frame_new_pass" />
+
+    <TextView
+        android:id="@+id/enter_your_new_password_twice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:alpha="0.8"
+        android:gravity="top"
+        android:layout_marginStart="2dp"
+        android:text="Enter your new password twice."
+        android:textColor="#D9D9D9"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/keep_your_account_secure"
+        app:layout_constraintTop_toBottomOf="@+id/frame_re_enter_pass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm_new_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/dm_sans_medium"
+        android:background="@drawable/button_green_background_login"
+        android:textColor="@color/white"
+        android:text="Confirm"
+        android:padding="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_your_new_password_twice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

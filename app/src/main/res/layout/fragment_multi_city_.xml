@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomnavmain.home.flight.multicity.MultiCity_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/frame_traveller"
+            android:layout_width="152dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edittext_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/frame_dates_multicity"
+            android:layout_width="152dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/frame_traveller"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/traveller"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="23dp"
+            android:src="@drawable/green_travellers_search"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_traveller"
+            app:layout_constraintStart_toStartOf="@+id/frame_traveller"
+            app:layout_constraintTop_toTopOf="@+id/frame_traveller"
+            app:tint="#8BF2D9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="Travellers"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_traveller"
+            app:layout_constraintEnd_toEndOf="@+id/frame_traveller"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/traveller"
+            app:layout_constraintTop_toTopOf="@+id/frame_traveller"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/dates"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="23dp"
+            android:src="@drawable/select_dates"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_dates_multicity"
+            app:layout_constraintStart_toStartOf="@+id/frame_dates_multicity"
+            app:layout_constraintTop_toTopOf="@+id/frame_dates_multicity"
+            app:tint="#8BF2D9" />
+
+        <TextView
+            android:id="@+id/select_dates_multicity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="Select dates"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_dates_multicity"
+            app:layout_constraintEnd_toEndOf="@+id/frame_dates_multicity"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/dates"
+            app:layout_constraintTop_toTopOf="@+id/frame_dates_multicity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/flight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Flight 1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly1"
+            app:layout_constraintTop_toBottomOf="@+id/frame_traveller" />
+
+        <View
+            android:id="@+id/frame_fly1"
+            android:layout_width="328dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_color"
+            app:layout_constraintEnd_toEndOf="@+id/frame_dates_multicity"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="@+id/frame_traveller"
+            app:layout_constraintTop_toBottomOf="@+id/flight1" />
+
+        <LinearLayout
+            android:id="@+id/fly_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly1"
+            app:layout_constraintTop_toTopOf="@+id/frame_fly1">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                app:tint="#8BF2D9"
+                android:src="@drawable/green_flight_takeoff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="4dp"
+                android:text="Flying from"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/horizontal_dotted"
+            android:layout_width="328dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="12dp"
+            android:layerType="software"
+            android:src="@drawable/horizontal_dot_line"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly1"
+            app:layout_constraintTop_toBottomOf="@+id/fly_from" />
+
+
+        <LinearLayout
+            android:id="@+id/fly_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_dotted">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                app:tint="#8BF2D9"
+                android:src="@drawable/green_flight_land" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="4dp"
+                android:text="Flying to"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layerType="software"
+            android:rotation="90"
+            android:src="@drawable/vertical_dot_line"
+            app:layout_constraintBottom_toTopOf="@+id/fly_to_2"
+            app:layout_constraintStart_toStartOf="@id/frame_fly2"
+            app:layout_constraintTop_toBottomOf="@+id/fly_from2"
+            tools:layout_editor_absoluteX="61dp" />
+
+        <TextView
+            android:id="@+id/flight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Flight 2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/flight1"
+            app:layout_constraintTop_toBottomOf="@+id/frame_fly1" />
+
+        <View
+            android:id="@+id/frame_fly2"
+            android:layout_width="328dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_color"
+            app:layout_constraintEnd_toEndOf="@+id/frame_fly1"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly1"
+            app:layout_constraintTop_toBottomOf="@+id/flight2" />
+
+
+        <LinearLayout
+            android:id="@+id/fly_from2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly2"
+            app:layout_constraintTop_toTopOf="@+id/frame_fly2">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                app:tint="#8BF2D9"
+                android:src="@drawable/green_flight_takeoff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="4dp"
+                android:text="Flying from"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/horizontal_dotted2"
+            android:layout_width="328dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="12dp"
+            android:layerType="software"
+            android:src="@drawable/horizontal_dot_line"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly2"
+            app:layout_constraintTop_toBottomOf="@+id/fly_from2" />
+
+
+        <LinearLayout
+            android:id="@+id/fly_to_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="@+id/frame_fly2"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_dotted2">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                app:tint="#8BF2D9"
+                android:src="@drawable/green_flight_land" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="4dp"
+                android:text="Flying to"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/ver_dotted"
+            android:layout_width="28dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="13dp"
+            android:layerType="software"
+            android:rotation="90"
+            android:src="@drawable/vertical_dot_line"
+            app:layout_constraintBottom_toTopOf="@+id/fly_to"
+            app:layout_constraintStart_toStartOf="@id/frame_fly1"
+            app:layout_constraintTop_toBottomOf="@+id/fly_from"
+            tools:layout_editor_absoluteX="61dp" />
+
+
+
+        <TextView
+            android:id="@+id/add_flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="top"
+            android:text="+ Add flight"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/background_add_flight"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

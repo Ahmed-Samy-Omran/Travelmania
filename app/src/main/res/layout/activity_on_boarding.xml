@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.OnBoardingActivity"
+    tools:background="@color/on_board_layer">
+   <androidx.viewpager2.widget.ViewPager2
+       android:id="@+id/viewpager_onboarding"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:background="@drawable/onboard1test"
+       />
+   <me.relex.circleindicator.CircleIndicator3
+       android:id="@+id/onboard_indicator"
+       android:layout_width="52dp"
+       android:layout_height="20dp"
+       android:background="@drawable/glassy_onboard_background"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginStart="24dp"
+       android:layout_marginBottom="66dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

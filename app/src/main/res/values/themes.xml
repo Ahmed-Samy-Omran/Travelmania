@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravelMania" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue1</item>
+    </style>
+
+    !-- Style for the AutoCompleteTextView -->
+    <style name="NoBorderAutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingStart">8dp</item> <!-- Adjust padding as needed -->
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+    <style name="Base.Theme.TabLayout" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.TabLayout" parent="Base.Theme.TabLayout" />
+
+    <style name="OvalShape">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@style/OvalShape</item>
+    </style>
+     // make a style for hint text change the size and color and font for hint in edit text
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+    </style>
+    <style name="Theme.TravelMania" parent="Base.Theme.TravelMania" />
+    <style name="AppTheme.TransparentAppBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Search" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/search_car_svg</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
